@@ -1,0 +1,15 @@
+/* Imported two external fonts*/
+@font-face{
+  src: url('../fonts/Montserrat-Regular.ttf');
+  font-family: Montserrat;
+}
+
+@font-face{
+    src: url('../fonts/Roboto-Light.ttf');
+    font-family: Roboto;
+}
+
+/* Made body to have margin zero margin */
+body {
+    margin: 0;
+}

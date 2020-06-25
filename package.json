@@ -1,0 +1,24 @@
+{
+  "name": "flowers",
+  "version": "1.0.0",
+  "description": "flowers",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Mohamed Salah Ahmed",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.7",
+    "dotenv": "^8.2.0",
+    "firebase": "^7.15.3",
+    "grommet": "^2.14.0",
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "recompose": "^0.30.0",
+    "styled-components": "^5.1.1"
+  }
+}
