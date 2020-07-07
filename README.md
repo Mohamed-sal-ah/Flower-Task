@@ -1,5 +1,5 @@
 # Flower-task
-This flower app with Nextjs and Firebase realtime database.
+This flower app built with Nextjs and Firebase realtime database.
 
 ## Descriptions
 This flower app build with Nextjs and Firebase realtime database. This app allows users with botanical botanical interest get facts about flowers. Registered users can write comment about in each flower selected flower wich is stored in the database. Users can also edit and delete comments.
