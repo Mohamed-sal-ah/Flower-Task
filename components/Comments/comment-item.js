@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Box, Header, Text } from 'grommet'
+import format from 'date-format'
 // Import styled compoments and Box, Header, Text from gromment
 const CommentBox = styled(Box)`
 margin: 0 10px;
@@ -41,7 +42,7 @@ align-items:center;
 const CommentItem = ({ section }) => {
     const whichDate = section.editedAt ? section.editedAt : section.date // Checks if comment has edited
     const commentDate = new Date(whichDate)// Converts to date
-    const fullDate = `${commentDate.getFullYear()}/${commentDate.getMonth()}/${commentDate.getDate()}  ${commentDate.getHours()}:${(commentDate.getMinutes() < 10 ? '0' : '') + commentDate.getMinutes()}`
+    const fullDate = format('yyyy/MM/dd hh:mm',commentDate)
     return (
         <CommentBox>
             <UserDateDiv>

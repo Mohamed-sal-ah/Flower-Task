@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Box, Header, Text, Button, TextInput } from 'grommet'
+import format from 'date-format'
 // Import styled components and Box, Header, Text, Button, TextInput from gromment
 const CommentBox = styled(Box)`
 margin: 0 10px;
@@ -114,7 +115,7 @@ class UserCommentItem extends React.Component {
         const { editMode, editText } = this.state
         const whichDate = section.editedAt ? section.editedAt : section.date
         const commentDate = new Date(whichDate) // covert to date
-        const fullDate = `${commentDate.getFullYear()}/${commentDate.getMonth()}/${commentDate.getDate()}  ${commentDate.getHours()}:${(commentDate.getMinutes() < 10 ? '0' : '') + commentDate.getMinutes()}`
+        const fullDate = format('yyyy/MM/dd hh:mm',commentDate)
         return (
             <CommentBox>
                 <UserDateDiv>
